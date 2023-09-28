@@ -12,10 +12,9 @@ const SearchForm = () => {
 
     const [search, setSearch] = useState("");
 
+    const router = useRouter();
+    const pathname = usePathname();
     useEffect(() => {
-        const router = useRouter();
-        const pathname = usePathname();
-
         const delayDebounceFn = setTimeout(() => {
             let newUrl = "";
 
